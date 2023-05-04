@@ -9,8 +9,8 @@ console.log(turmaB)
 function retornaArray(...args: number[]): number[] {
     return args
 }
-const array = retornaArray(20,2 6, 200, 345, 900)
-console.log(array)\
+const array = retornaArray(20,26, 200, 345, 900)
+console.log(array)
 console.log(retornaArray(...numbers))
 
 //Rest e Spread (Tupla)
