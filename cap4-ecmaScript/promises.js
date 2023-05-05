@@ -7,23 +7,23 @@ function esperar3s(callback) {
 esperar3s(function (resultado) {
     console.log(resultado);
 });
-/* Promise
+//Promise
 function esperar3sPromise() {
-    return new Promise((resolve: any) => {
-        setTimeout(() => {
-            resolve('3 segundos depois promise...')
-        }, 3000)
-    })
+    return new Promise(function (resolve, reject) {
+        setTimeout(function () {
+            resolve('3 segundos depois promise...');
+        }, 3000);
+    });
 }
-
 esperar3sPromise()
-   .then(dado =>
-        console.log(dado))
-        */
+    .then(function (dado) {
+    return console.log(dado);
+});
 // Promise usando api
 fetch('https://swapi.dev/api/people/1')
     .then(function (res) { return res.json; })
-    .then(function (personagem) { return personagem.films; })
-    .then(function (films) { return fetch(films[0]); })
-    .then(function (resFilm) { return resFilm.json(); })
-    .then(function (filme) { return console.log(filme.title); });
+    .then(function (personagem) { return console.log(personagem); });
+//     .then(personagem => personagem.films)
+//     .then(films => fetch(films[0]))
+//     .then(resFilm => resFilm.json())
+//     .then(filme => console.log(filme.title))

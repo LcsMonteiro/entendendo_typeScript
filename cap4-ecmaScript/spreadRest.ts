@@ -17,8 +17,10 @@ console.log(retornaArray(...numbers))
 const tupla: [number, string, boolean] = [1, 'algo', false]
 
 function tuplaParam1(a: number, b: string, c: boolean): void {
-    console.log(`1) ${a} ${b} ${c})
+    console.log(`1) ${a} ${b} ${c}`)
 }
-
 tuplaParam1(...tupla)
 
+const aluno = { nome: 'Larissa'}
+const alunoNotas = {...aluno, matematica: 10}
+console.log(alunoNotas)
