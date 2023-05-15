@@ -1,5 +1,5 @@
 class Data {
-    public dia: number // são publicos por padrão caso não defirnismos os modificadores de acesso
+    public dia: number | undefined // são publicos por padrão caso não defirnismos os modificadores de acesso
     public mes: number
     public ano: number
 

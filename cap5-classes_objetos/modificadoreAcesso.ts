@@ -47,12 +47,13 @@ console.log(carro1.frear())
 // carro1.alterarVelocidade(150)
 // console.log('atual -> ' + carro1.velocidadeAtual)
 
+//Heranca
 // É a capacidade de reutilizar código
 
 class Ferrari extends Carro {
 
     constructor(modelo: string, velocidadeMaxima: number) {
-        super('Ferrari', modelo, velocidadeMaxima) // super = construtor da classe mae
+        super('Ferrari', modelo, velocidadeMaxima) // super = chamada construtor da classe mae
     }
 
     public acelerar(): number {
